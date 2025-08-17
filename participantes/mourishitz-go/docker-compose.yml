@@ -15,7 +15,7 @@ services:
       resources:
         limits:
           cpus: "0.10"
-          memory: "15MB"
+          memory: "10MB"
 
   api1: &api
     image: ghcr.io/mourishitz/go-rinha-de-backend/go-proxy:latest
@@ -57,7 +57,7 @@ services:
       resources:
         limits:
           cpus: "0.4325"
-          memory: "218.75MB"
+          memory: "221.75MB"
 
   worker1: &worker
     container_name: worker-1
@@ -73,7 +73,7 @@ services:
       resources:
         limits:
           cpus: "0.1875"
-          memory: "18.75MB"
+          memory: "20.75MB"
     networks:
       - rinha-backend
       - payment-processor
