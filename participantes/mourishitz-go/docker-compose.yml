@@ -30,7 +30,7 @@ services:
       resources:
         limits:
           cpus: "0.20"
-          memory: "30MB"
+          memory: "25MB"
     networks:
       - rinha-backend
     depends_on:
